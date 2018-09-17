@@ -1,3 +1,3 @@
 print("Hallo, hoe heet je?")
-username = input("") 
+username = input() 
 print("Hallo " + username + ", alles goed?" )
