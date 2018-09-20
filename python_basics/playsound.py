@@ -7,7 +7,6 @@ numPbtimes = int(input())
 
 print("BPM?")
 bpm = float(60/float(input()))
-print(bpm)
 
 print("ritme??:")
 lijst = [float(x) for x in range(numPbtimes)]
