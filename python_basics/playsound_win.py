@@ -1,5 +1,5 @@
 import time
-import os
+import winsound
 
 
 print("hello, how many KICKS would you like?")
@@ -20,12 +20,6 @@ for f in range(length):
 
 for value in ritme:
     tsleep = float(float(value) *float(bpm))
-    os.system("aplay /media/yannick/NieuwVolume/HKU/CSD_Rep/CSD2/python_basics/kick.wav")
+    winsound.PlaySound ("kick", winsound.SND_FILENAME)
     time.sleep(tsleep)
     
-    
-
-
-
-
-
