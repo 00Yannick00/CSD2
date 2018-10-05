@@ -16,19 +16,17 @@ c = input()
 if c=="n":
   print("Set bpm to?") 
   bpm = float(input())
-if not ((c=="y") or (c=="y")):
+if not (c=="y" or "n"):
   bpm = 60
   print("you fool! you pressed the wrong button. your bpm is now 60.")   
 
 #variables2
-print(bpm)
+
 quarterNoteDuration = 60 / bpm
-print(quarterNoteDuration)
 sixteenthNoteDuration = quarterNoteDuration / 4.0
 
 #create list for timestamps
 timestamps = []
-timestamps16th = []
 
 #ask for rhytm, input[list] 
 template = """input rhytm:\n\
