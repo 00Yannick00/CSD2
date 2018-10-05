@@ -14,7 +14,10 @@ print("keep current bpm? y/n")
 c = input()
 if c=="n":
   print("Set bpm to?") 
-  bpm = float(input())   
+  bpm = float(input())
+if not c=="n" or c=="y":
+  bpm = 60
+  print("you fool! you pressed the wrong button. your bpm is now 60.")   
 
 #variables2
 quarterNoteDuration = 60 / bpm
