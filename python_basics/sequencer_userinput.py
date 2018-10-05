@@ -1,7 +1,6 @@
 #variables
 import simpleaudio as sa
 import time
-import random
 samples = [sa.WaveObject.from_wave_file("/media/yannick/NieuwVolume/HKU/CSD_Rep/CSD2/python_basics/audio_files/kick.wav")]
 
 
