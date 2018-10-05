@@ -1,5 +1,7 @@
 import time
-import winsound
+import simpleaudio as sa
+samples = [sa.WaveObject.from_wave_file("/media/yannick/NieuwVolume/HKU/CSD_Rep/CSD2/python_basics/kick.wav")]
+kickPlay = samples[0].play()
 
 
 print("hello, how many KICKS would you like?")
@@ -20,6 +22,6 @@ for f in range(length):
 
 for value in ritme:
     tsleep = float(float(value) *float(bpm))
-    winsound.PlaySound ("kick", winsound.SND_FILENAME)
+    kickPlay
     time.sleep(tsleep)
     
