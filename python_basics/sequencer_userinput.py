@@ -15,9 +15,10 @@ c = input()
 if c=="n":
   print("Set bpm to?") 
   bpm = float(input())
-if not (c=="y" or "n"):
-  bpm = 60
-  print("you fool! you pressed the wrong button. your bpm is now 60.")   
+else:
+   if not ((c=="y") or (c=="n")):
+     bpm = 60
+     print("you fool! you pressed the wrong button. your bpm is now 60.")   
 
 #variables2
 
@@ -70,6 +71,8 @@ while keepPlaying:
     else:
       # list is empty, stop loop
       keepPlaying = False
+      #rhytm = [0]
+      #print(rhytm)
 else:
       time.sleep(0.001)
 
